@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zenkaruto the voice chatbot</title>
+    <link rel="icon" type="image/jpg" href="./favicon.ico?" />
+
+    <meta property="og:title" content="Zenkaruto the voice chatbot" />
+    <meta name="description" content="A simple yet charismatic voice chatbot" />
+    <meta
+      property="og:description"
+      content="A simple yet charismatic voice chatbot"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="robotCard">
+      <div class="robotContainer">
+        <img src="./pro-robot.png" class="robot" alt="Robot Picture" />
+        <button class="button">click to chat with me</button>
+      </div>
+
+      <button type="button" class="collapsible">see chat options:</button>
+
+      <div class="commandOptions">
+        <div class="box">
+          <p>Hello</p>
+          <p>How are you?</p>
+          <p>Who created you?</p>
+          <p>What is your name?</p>
+          <p>What are you doing?</p>
+        </div>
+
+        <div class="box">
+          <p>Tell me a joke</p>
+          <p>Sing me a song</p>
+          <p>Open Google</p>
+          <p>Open Facebook</p>
+          <p>Open YouTube</p>
+          <p>Open Gmail</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
