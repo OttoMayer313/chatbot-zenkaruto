@@ -1,7 +1,7 @@
 Voice chatbot - Zenkaruto
 ============
 [![Current Version](https://img.shields.io/badge/version-1.0.1-green.svg)](https://github.com/OttoMayer313/chatbot-zenkaruto)
-============
+
 This voice bot is coded using Web speech API. Through it's speech recognition and synthesis, the bot is able to answer some predefined questions or statements as well as perform a few predefined tasks.
 
 ![Chat Preview](./zenkaruto-voice-chatbot-prevew.png)
